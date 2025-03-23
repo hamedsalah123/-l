@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link px-5 pt-3 active" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 pt-3" href="#contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 pt-3" href="#services">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 pt-3" href="#login">login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hamed">
+            <h1>hamed salah</h1>
+            <p>مصمم ويب محترف</p>
+            <a class="btn btn-primary" href="#"> search</a>
+        </div>
+        <!-- about us -->
+         <section id="about">
+            <h2>about us</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 px-5 mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/contact-bg.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 px-5 mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/contact-bg.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                
+                <div class="col-md-4 px-5 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/contact-bg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+         </section>
+
+         <section id="services">
+            <h2>contact us</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 px-5 mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/icon-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 px-5 mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/icon-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                
+                <div class="col-md-4 px-5 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/icon-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+         </section>
+        <section id="login">
+            <div class="form-container">
+                <h2 class="text-center mb-4">نموذج تسجيل</h2>
+                <form id="registrationForm" onsubmit="handleSubmit(event)">
+                    <!-- الاسم الكامل -->
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">الاسم الكامل</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+        
+                    <!-- رقم الهوية / الجواز -->
+                    <div class="mb-3">
+                        <label for="idNumber" class="form-label">رقم الهوية / الجواز</label>
+                        <input type="text" class="form-control" id="idNumber" required>
+                    </div>
+        
+                    <!-- تاريخ الميلاد -->
+                    <div class="mb-3">
+                        <label for="birthDate" class="form-label">تاريخ الميلاد</label>
+                        <input type="date" class="form-control" id="birthDate" required>
+                    </div>
+        
+                    <!-- الجنس -->
+                    <div class="mb-3">
+                        <label class="form-label">الجنس</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="ذكر" required>
+                            <label class="form-check-label" for="male">ذكر</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="أنثى">
+                            <label class="form-check-label" for="female">أنثى</label>
+                        </div>
+                    </div>
+        
+                    <!-- رقم الهاتف -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+        
+                    <!-- البريد الإلكتروني -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+        
+                    <!-- العنوان -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">العنوان</label>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+        
+                    <!-- الغرض من التسجيل -->
+                    <div class="mb-3">
+                        <label class="form-label">الغرض من التسجيل</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purpose" id="work" value="عمل" required>
+                            <label class="form-check-label" for="work">عمل</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purpose" id="study" value="دراسة">
+                            <label class="form-check-label" for="study">دراسة</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purpose" id="other" value="أخرى">
+                            <label class="form-check-label" for="other">أخرى</label>
+                        </div>
+                        <input type="text" class="form-control mt-2" id="otherPurpose" placeholder="يرجى التوضيح" style="display: none;">
+                    </div>
+        
+                    <!-- توقيع المسجل -->
+                    <div class="mb-3">
+                        <label for="signature" class="form-label">توقيع المسجل</label>
+                        <input type="text" class="form-control" id="signature" required>
+                    </div>
+        
+                    <!-- التاريخ -->
+                    <div class="mb-3">
+                        <label for="regDate" class="form-label">التاريخ</label>
+                        <input type="date" class="form-control" id="regDate" value="2025-03-23" readonly>
+                    </div>
+        
+                    <!-- زر الإرسال -->
+                    <button type="submit" class="btn btn-primary w-100">تسجيل</button>
+                </form>
+        </section>
+        <footer id="contact">
+            <div class="container">
+                <div class="row">
+                    <!-- قسم عن الموقع -->
+                    <div class="col-md-4">
+                        <h5>عن الموقع</h5>
+                        <p>نحن نسعى لتقديم أفضل الخدمات والمحتوى المميز لعملائنا. انضم إلينا لتجربة فريدة!</p>
+                    </div>
+    
+                    <!-- قسم الروابط السريعة -->
+                    <div class="col-md-4">
+                        <h5>روابط سريعة</h5>
+                        <ul>
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">الخدمات</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- قسم الاتصال -->
+                    <div class="col-md-4">
+                        <h5>تواصل معنا</h5>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> 1234-567-890</li>
+                            <li><i class="fas fa-envelope"></i> info@example.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                        </ul>
+                        <!-- أيقونات التواصل الاجتماعي -->
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- الجزء السفلي من الفوتر -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 جميع الحقوق محفوظة | تصميم بواسطة <a href="#" style="color: #3498db;">xAI</a></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // إظهار حقل "أخرى" عند اختيار الخيار
+        document.querySelectorAll('input[name="purpose"]').forEach((radio) => {
+            radio.addEventListener('change', function() {
+                const otherInput = document.getElementById('otherPurpose');
+                if (this.value === 'أخرى') {
+                    otherInput.style.display = 'block';
+                    otherInput.required = true;
+                } else {
+                    otherInput.style.display = 'none';
+                    otherInput.required = false;
+                }
+            });
+        });
+
+        // معالجة إرسال النموذج
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('registrationForm');
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            // عرض البيانات في الـ Console (يمكنك تعديل هذا لإرسال البيانات إلى خادم)
+            console.log('بيانات النموذج:', data);
+            alert('تم تسجيل البيانات بنجاح!');
+            form.reset();
+            document.getElementById('otherPurpose').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
